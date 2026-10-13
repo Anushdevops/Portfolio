@@ -1,0 +1,51 @@
+/* ───────────── Design tokens ───────────── */
+:root {
+  /* Palette */
+  --burnt: #c65d32;
+  --terracotta: #a8472d;
+  --cream: #f6f0e6;
+  --sand: #e8d8c3;
+  --charcoal: #1d1d1b;
+  --muted: #a9a39a;
+
+  /* Derived (all checked for text contrast on their intended surface) */
+  --ink: #1d1d1b;            /* text on cream / sand */
+  --ink-soft: #4b463f;       /* secondary text on cream / sand (≥7:1) */
+  --ember: #e8946a;          /* orange text on charcoal (≥6:1) */
+  --sand-deep: #d8c4a6;
+  --charcoal-2: #272623;
+  --charcoal-3: #31302c;
+  --line-light: rgba(29, 29, 27, 0.16);
+  --line-dark: rgba(246, 240, 230, 0.14);
+
+  /* Type */
+  --font-display: "Instrument Serif", "Iowan Old Style", Georgia, "Times New Roman", serif;
+  --font-body: "Manrope", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, "SF Mono", Menlo, monospace;
+
+  --fs-label: 0.75rem;
+  --fs-small: 0.9rem;
+  --fs-body: 1.0625rem;
+  --fs-lead: clamp(1.15rem, 1.5vw, 1.4rem);
+  --fs-h2: clamp(2.5rem, 6.2vw, 5.25rem);
+  --fs-h3: clamp(1.5rem, 2.4vw, 2rem);
+
+  /* Spacing */
+  --s-1: 0.25rem;
+  --s-2: 0.5rem;
+  --s-3: 0.75rem;
+  --s-4: 1rem;
+  --s-5: 1.5rem;
+  --s-6: 2rem;
+  --s-7: 3rem;
+  --s-8: 4.5rem;
+  --section-y: clamp(5rem, 11vw, 9.5rem);
+  --gutter: clamp(1.25rem, 5vw, 4rem);
+  --container: 1240px;
+
+  /* Shape & motion */
+  --radius: 14px;
+  --radius-lg: 22px;
+  --ease: cubic-bezier(0.22, 0.8, 0.24, 1);
+  --nav-h: 76px;
+}
