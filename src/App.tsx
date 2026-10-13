@@ -64,8 +64,8 @@ export default function App() {
 
       <main>
         <section id="top" className="hero">
-          <video ref={video} className="hero-video" autoPlay muted loop playsInline preload="metadata" poster="/hero-poster.jpg" aria-label="Intro video of Bhyri Anush Goud">
-            <source src="/hero.mp4" type="video/mp4" />
+          <video ref={video} className="hero-video" autoPlay muted loop playsInline preload="metadata" poster={`${import.meta.env.BASE_URL}hero-poster.jpg`} aria-label="Intro video of Bhyri Anush Goud">
+            <source src={`${import.meta.env.BASE_URL}hero.mp4`} type="video/mp4" />
           </video>
           <button className="sound" onClick={toggleSound} aria-pressed={!muted}>
             {muted ? <VolumeX size={18} /> : <Volume2 size={18} />}{muted ? 'Play with sound' : 'Mute'}
@@ -85,7 +85,7 @@ export default function App() {
 
         <section id="about" className="sec cream">
           <div className="wrap about">
-            <figure className="portrait"><img src="/portrait.jpg" alt={`Portrait of ${profile.name}`} width="1000" height="962" loading="lazy" decoding="async" /></figure>
+            <figure className="portrait"><img src={`${import.meta.env.BASE_URL}portrait.jpg`} alt={`Portrait of ${profile.name}`} width="1000" height="962" loading="lazy" decoding="async" /></figure>
             <div>
               <p className="label">About</p>
               <h2>Keeping critical systems reliable, one pipeline at a time.</h2>

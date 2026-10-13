@@ -6,7 +6,7 @@ export const profile = {
   email: 'goudanush40@gmail.com',
   linkedin: 'https://www.linkedin.com/in/anush-goud-222045225',
   github: '', // TODO: add your GitHub URL, e.g. https://github.com/your-handle
-  resume: '/resume.pdf',
+  resume: `${import.meta.env.BASE_URL}resume.pdf`,
 }
 export const stats = [
   { v: '5+', l: 'Years in DevOps' },
